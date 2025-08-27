@@ -296,58 +296,58 @@
 // - ✅ The values() method
 // - ✅ The flatMap() array method
 
-let customers = [
-  {
-    id: 001,
-    f_name: "Abby",
-    l_name: "Thomas",
-    gender: "M",
-    married: true,
-    age: 32,
-    expense: 500,
-    purchased: ["Shampoo", "Toys", "Book"],
-  },
-  {
-    id: 002,
-    f_name: "Jerry",
-    l_name: "Tom",
-    gender: "M",
-    married: true,
-    age: 64,
-    expense: 100,
-    purchased: ["Stick", "Blade"],
-  },
-  {
-    id: 003,
-    f_name: "Dianna",
-    l_name: "Cherry",
-    gender: "F",
-    married: true,
-    age: 22,
-    expense: 1500,
-    purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
-  },
-  {
-    id: 004,
-    f_name: "Dev",
-    l_name: "Currian",
-    gender: "M",
-    married: true,
-    age: 82,
-    expense: 90,
-    purchased: ["Book"],
-  },
-  {
-    id: 005,
-    f_name: "Maria",
-    l_name: "Gomes",
-    gender: "F",
-    married: false,
-    age: 7,
-    expense: 300,
-    purchased: ["Toys"],
-  },
-];
+// let customers = [
+//   {
+//     id: 001,
+//     f_name: "Abby",
+//     l_name: "Thomas",
+//     gender: "M",
+//     married: true,
+//     age: 32,
+//     expense: 500,
+//     purchased: ["Shampoo", "Toys", "Book"],
+//   },
+//   {
+//     id: 002,
+//     f_name: "Jerry",
+//     l_name: "Tom",
+//     gender: "M",
+//     married: true,
+//     age: 64,
+//     expense: 100,
+//     purchased: ["Stick", "Blade"],
+//   },
+//   {
+//     id: 003,
+//     f_name: "Dianna",
+//     l_name: "Cherry",
+//     gender: "F",
+//     married: true,
+//     age: 22,
+//     expense: 1500,
+//     purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+//   },
+//   {
+//     id: 004,
+//     f_name: "Dev",
+//     l_name: "Currian",
+//     gender: "M",
+//     married: true,
+//     age: 82,
+//     expense: 90,
+//     purchased: ["Book"],
+//   },
+//   {
+//     id: 005,
+//     f_name: "Maria",
+//     l_name: "Gomes",
+//     gender: "F",
+//     married: false,
+//     age: 7,
+//     expense: 300,
+//     purchased: ["Toys"],
+//   },
+// ];
 
 // const result = customers.filter((customer) => customer.age >= 60);
 
@@ -397,3 +397,55 @@ let customers = [
 // console.log(averageAge / count);
 
 // console.log(customers.every((customer) => customer.age > 10));
+
+// - [ ] **T-066**: Find the longest word in this sentence using Array and Array methods: ]
+// "40 Days of JavaScript by tapaScript is a powerful initiative".
+
+// let sentence = "40 Days of JavaScript by tapaScript is a powerful initiative";
+
+// console.log(
+//   sentence.split(" ").reduce((acc, currentValue) => {
+//     return acc.length > currentValue.length ? acc : currentValue;
+//   }, "")
+// );
+
+// // - [ ] **T-067**: Find common elements between two arrays, [1, 2, 3, 4], [3, 4, 5, 6]
+
+// let arr1 = [1, 2, 3, 4];
+// let arr2 = [3, 4, 5, 6];
+
+// let arr3 = arr1.concat(arr2);
+// // console.log(arr3);
+
+// // let commonElem = [];
+// // arr3.reduce((acc, currentValue) => {
+// //   return acc === currentValue ? commonElem.push(acc) : (acc = currentValue);
+// // });
+// // let commonElem = [];
+// // for (let i = 0; i < arr1.length; i++) {
+// //   if (arr2.includes(i)) commonElem.push(i);
+// // }
+
+// const commonElem = arr1.filter((elem) => arr2.includes(elem));
+// console.log(Array.from(["a", "a"]));
+
+// let arr4 = [3, 7, 3, 2, 3, 8, 7, 7, 3];
+
+// const req = arr4.reduce((acc, currentValue) => {
+//   acc[currentValue] = (acc[currentValue] || 0) + 1;
+//   return acc;
+// }, {});
+
+// console.log(
+//   Object.keys(req).reduce((a, b) => {
+//     return req[a] > req[b] ? a : b;
+//   })
+// );
+
+// console.log(
+//   Object.fromEntries([
+//     ["a", 1],
+//     ["b", 2],
+//     ["c", 3],
+//   ])
+// );
