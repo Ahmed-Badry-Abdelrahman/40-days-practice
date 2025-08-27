@@ -8,18 +8,18 @@ Please complete the following tasks and post them on the tapaScript Discord unde
 
 > Please Note: These tasks are for your practice. If you are stuck, go back to the videos and get the clarifications. If you are still stuck, feel free to start a conversation on [tapaScript Discord](https://discord.gg/HHwdF8r28m).
 
-- [ ] **T-001**: Create an array of 5 elements using the Array Constructor.
-- [ ] **T-002**: Create an array of 3 empty slots.
-- [ ] **T-003**: Create an array of 6 elements using the Array literals and access the fourth element in the array using its `length` property.
-- [ ] **T-004**: Use the `for` loop on the above array to print elements in the odd index.
-- [ ] **T-005**: Add one element at the front and the end of an array.
-- [ ] **T-006**: Remove an element from the front and the end of an array.
-- [ ] **T-007**: Create an array containing the name of your favourite foods(10 foods). Destructure the 6th food element from the array using destructuring.
-- [ ] **T-008**: Take out the last 8 food items from the above array using the Array destructuring. Hint: rest parameter.
-- [ ] **T-009**: Clone an Array(Shallow cloning)
-- [ ] **T-010**: Empty an array using its length property
-- [ ] **T-011**: Create an array of 10 elements(number 1 to 10). Resize the array to length 6 once you find the number 5 in that array. Hint: Use `for-loop`.
-- [ ] **T-012**: Create an Array of 10 elements. Use the `splice()` method to empty the array.
+- [x] **T-001**: Create an array of 5 elements using the Array Constructor.
+- [x] **T-002**: Create an array of 3 empty slots.
+- [x] **T-003**: Create an array of 6 elements using the Array literals and access the fourth element in the array using its `length` property.
+- [x] **T-004**: Use the `for` loop on the above array to print elements in the odd index.
+- [x] **T-005**: Add one element at the front and the end of an array.
+- [x] **T-006**: Remove an element from the front and the end of an array.
+- [x] **T-007**: Create an array containing the name of your favourite foods(10 foods). Destructure the 6th food element from the array using destructuring.
+- [x] **T-008**: Take out the last 8 food items from the above array using the Array destructuring. Hint: rest parameter.
+- [x] **T-009**: Clone an Array(Shallow cloning)
+- [x] **T-010**: Empty an array using its length property
+- [x] **T-011**: Create an array of 10 elements(number 1 to 10). Resize the array to length 6 once you find the number 5 in that array. Hint: Use `for-loop`.
+- [x] **T-012**: Create an Array of 10 elements. Use the `splice()` method to empty the array.
 - [ ] **T-013**: Create an Array of 10 elements. You can empty the array in multiple ways: using the `length` property, using the `pop()` method, using the `shift()` method, setting the array with `[]`, or the `splice()` method. Which among these methods are most efficient and why?
 - [ ] **T-014**: What happens when you concatenate two empty arrays?
 - [ ] **T-015**: How can you check if a value is partially matching with any of the elements of an Array?
@@ -80,7 +80,7 @@ Please complete the following tasks and post them on the tapaScript Discord unde
 - [ ] **T-039**: Find the total salary of all employees working in the "Engineering" department.
 - [ ] **T-040**: Check if there is any department where all employees earn more than 5000.
 - [ ] **T-041**: Assume each employee has a projects array (e.g., { id: 1, name: "Alice", projects: ["Project A", "Project B"] }).
-Find the total number of unique projects being handled across all employees.
+      Find the total number of unique projects being handled across all employees.
 - [ ] **T-042**: For each employee, find their department name and return an array of employee names with their department names.
 - [ ] **T-043**: Get a list of names of employees earning more than 6000.
 - [ ] **T-044**: Write a for-of loop to print the names of all employees from the employees array.
@@ -119,9 +119,9 @@ Find the total number of unique projects being handled across all employees.
 
 ```js
 const users = [
-  { name: 'Alice', age: 55 },
-  { name: 'Bob', age: 3 },
-  { name: 'Charlie', age: 25 },
+  { name: "Alice", age: 55 },
+  { name: "Bob", age: 3 },
+  { name: "Charlie", age: 25 },
 ];
 ```
 
