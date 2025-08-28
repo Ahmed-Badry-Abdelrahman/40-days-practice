@@ -1,0 +1,33 @@
+#counter {
+    width: 100px;
+    height: 100px;
+    background-color: #e8baba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+
+.faq-item {
+    border: 1px solid rgb(99, 99, 99);
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.faq-item .answer.hidden {
+    display: none;
+}
+
+
+.faq-item .answer.show {
+    display: block;
+}
