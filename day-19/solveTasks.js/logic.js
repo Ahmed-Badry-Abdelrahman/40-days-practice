@@ -88,3 +88,58 @@ function clickHandler(e) {
 //   const allAnswers = document.querySelectorAll(".answer.hidden");
 //   allAnswers.forEach((answer) => answer.classList.remove("hidden"));
 // });
+
+const tabsElem = document.querySelector(".tabs");
+
+function switchToTab(tabNumber) {
+  document.querySelector(`.tab.active`).classList.remove("active");
+  document.querySelector(`.content.active`).classList.remove("active");
+  document
+    .querySelector(`.tab[data-tab="${tabNumber}"]`)
+    .classList.add("active");
+  document
+    .querySelector(`.content[data-tab="${tabNumber}"]`)
+    .classList.add("active");
+}
+tabsElem.addEventListener("click", (e) => {
+  if (e.target.classList.contains("tab")) {
+    e.stopPropagation();
+    const tabNumber = e.target.getAttribute("data-tab");
+    switchToTab(tabNumber);
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "1") switchToTab(1);
+  if (e.key === "2") switchToTab(2);
+  if (e.key === "3") switchToTab(3);
+});
+
+// tabsElem.addEventListener("click", (e) => {
+//   if (e.target.classList.contains("tab")) {
+//     e.stopPropagation();
+//     const tabHeaders = e.target.parentElement;
+//     const tabContents = tabHeaders.nextElementSibling;
+//     Array.from(tabHeaders.children).forEach((tap) => {
+//       tap.classList.remove("active");
+//     });
+//     e.target.classList.add("active");
+
+//     Array.from(tabContents.children).forEach((content) => {
+//       content.classList.remove("active");
+//       content.classList.add("hidden");
+//       if (
+//         e.target.getAttribute("data-tab") === content.getAttribute("data-tab")
+//       ) {
+//         content.classList.remove("hidden");
+//         content.classList.add("active");
+//       }
+//     });
+//   }
+// });
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "1") switchToTab(1);
+  if (e.key === "2") switchToTab(2);
+  if (e.key === "3") switchToTab(3);
+});
